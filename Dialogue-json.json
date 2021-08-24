@@ -1,0 +1,96 @@
+{
+  "author": "",
+  "description": "Dialogue Lets Goo",
+  "extensionNamespace": "",
+  "fullName": "Dialogue",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZvcm1hdC1sZXR0ZXItY2FzZS1sb3dlciIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMC4wNiwxOEMyMCwxNy44MyAxOS45MSwxNy41NCAxOS44NiwxNy4xMUMxOS4xOSwxNy44MSAxOC4zOCwxOC4xNiAxNy40NSwxOC4xNkMxNi42MiwxOC4xNiAxNS45MywxNy45MiAxNS40LDE3LjQ1QzE0Ljg3LDE3IDE0LjYsMTYuMzkgMTQuNiwxNS42NkMxNC42LDE0Ljc4IDE0LjkzLDE0LjEgMTUuNiwxMy42MUMxNi4yNywxMy4xMiAxNy4yMSwxMi44OCAxOC40MywxMi44OEgxOS44M1YxMi4yNEMxOS44MywxMS43NSAxOS42OCwxMS4zNiAxOS4zOCwxMS4wN0MxOS4wOCwxMC43OCAxOC42MywxMC42NCAxOC4wNSwxMC42NEMxNy41MywxMC42NCAxNy4xLDEwLjc2IDE2Ljc1LDExQzE2LjQsMTEuMjUgMTYuMjMsMTEuNTQgMTYuMjMsMTEuODlIMTQuNzdDMTQuNzcsMTEuNDYgMTQuOTIsMTEuMDUgMTUuMjIsMTAuNjVDMTUuNSwxMC4yNSAxNS45Myw5Ljk0IDE2LjQ0LDkuNzFDMTYuOTUsOS41IDE3LjUsOS4zNiAxOC4xMyw5LjM2QzE5LjExLDkuMzYgMTkuODcsOS42IDIwLjQyLDEwLjA5QzIwLjk3LDEwLjU4IDIxLjI2LDExLjI1IDIxLjI4LDEyLjExVjE2QzIxLjI4LDE2LjggMjEuMzgsMTcuNDIgMjEuNTgsMTcuODhWMThIMjAuMDZNMTcuNjYsMTYuODhDMTguMTEsMTYuODggMTguNTQsMTYuNzcgMTguOTUsMTYuNTZDMTkuMzUsMTYuMzUgMTkuNjUsMTYuMDcgMTkuODMsMTUuNzNWMTQuMTZIMTguN0MxNi45MywxNC4xNiAxNi4wNCwxNC42MyAxNi4wNCwxNS41N0MxNi4wNCwxNiAxNi4xOSwxNi4zIDE2LjUsMTYuNTNDMTYuOCwxNi43NiAxNy4xOCwxNi44OCAxNy42NiwxNi44OE01LjQ2LDEzLjcxSDkuNTNMNy41LDguMjlMNS40NiwxMy43MU02LjY0LDZIOC4zNkwxMy4wNywxOEgxMS4xNEwxMC4xNywxNS40M0g0LjgyTDMuODYsMThIMS45M0w2LjY0LDZNMjIsMjBWMjJIMTQuNVYyMEgyMloiIC8+PC9zdmc+",
+  "name": "NewExtension",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/format-letter-case-lower.svg",
+  "shortDescription": "Hi",
+  "version": "1.0",
+  "tags": [],
+  "dependencies": [
+    {
+      "exportName": "my-dialogue",
+      "name": "New Dependency",
+      "type": "cordova",
+      "version": "1.0.0"
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "",
+      "fullName": "Dialogue Tree",
+      "functionType": "Condition",
+      "name": "Function",
+      "private": false,
+      "sentence": "",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DialogueTree::IsDialogueLineType"
+              },
+              "parameters": [
+                "\"options\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Screenshot::TakeScreenshot"
+              },
+              "parameters": [
+                "",
+                "FromCodePoint(1)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Hello!!!",
+          "longDescription": "",
+          "name": "",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": [
+        {
+          "name": "Group",
+          "objects": []
+        },
+        {
+          "name": "Group2",
+          "objects": []
+        }
+      ]
+    }
+  ],
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "name": "Dialoge",
+      "objectType": "",
+      "eventsFunctions": [],
+      "propertyDescriptors": []
+    }
+  ]
+}
